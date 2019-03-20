@@ -15,9 +15,10 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
-  contacts.each do |name,data|
-    data.each do |aspect,details|
-      binding.pry
+  contacts.map do |name,data|
+    data.map do |aspect,details|
+      if details == "strawberry"
+        
     end
   end
 end
