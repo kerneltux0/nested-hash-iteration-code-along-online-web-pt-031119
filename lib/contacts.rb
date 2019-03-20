@@ -17,7 +17,7 @@ require 'pry'
 def remove_strawberry(contacts)
   contacts.map do |name,data|
     data.map do |aspect,details|
-      details.delete_if
+      details.delete_if{i
         
     end
   end
