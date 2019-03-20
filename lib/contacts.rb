@@ -16,8 +16,9 @@ require 'pry'
   
 def remove_strawberry(contacts)
   contacts.map do |name,data|
-    if attribute == :favorite_ice_cream_flavors
-      data.delete_if {|ice_cream| ice_cream == "strawberry"}
+    data.map do |aspect,details|
+      details.delete_if{|i| i=="strawberry"}
+        
     end
   end
 end
